@@ -11,7 +11,7 @@ import SwiftUI
 struct Text_ProcessingApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ProcessingCategoriesView()
         }
     }
 }

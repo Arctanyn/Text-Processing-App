@@ -1,0 +1,54 @@
+//
+//  ProcessingCategoriesView.swift
+//  Text-Processing
+//
+//  Created by Malil Dugulubgov on 09.03.2024.
+//
+
+import SwiftUI
+
+struct ProcessingCategoriesView: View {
+    @StateObject private var viewModel = MainViewModel()
+    @FocusState private var textFieldFocused
+    
+    var body: some View {
+        NavigationStack {
+            ZStack {
+                Color(.systemGroupedBackground).ignoresSafeArea()
+
+                VStack {
+                    ScrollView {
+                        LazyVStack(alignment: .leading, spacing: 20) {
+                            ForEach(viewModel.textProcessingCategories, id: \.self) { category in
+                                NavigationLink {
+                                    Text(category.title)
+                                } label: {
+                                    TextProcessingCategoryView(category: category)
+                                }
+                                .foregroundStyle(.primary)
+                                .buttonStyle(PushDownButtonStyle())
+                                
+                            }
+                        }
+                        .padding(10)
+                    }
+                }
+            }
+            .navigationTitle(LocalizableStrings.categoriesTitle)
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button {
+                        
+                    } label: {
+                        Image(systemName: "info.circle")
+                    }
+                }
+            }
+        }
+        .tint(.orange)
+    }
+}
+
+#Preview {
+    ProcessingCategoriesView()
+}
