@@ -8,9 +8,9 @@
 import Foundation
 
 final class MainViewModel: ObservableObject {
-    
     // MARK: Properties
+
     let textProcessingCategories = TextProcessingCategory.allCases
-    
+
     @Published var inputText = String()
 }

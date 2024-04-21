@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		94AD429B2BAF1AC0008F2126 /* SummarizedTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AD429A2BAF1AC0008F2126 /* SummarizedTextView.swift */; };
+		94C43AC92BAE0A8800E23260 /* NLTextProcessing in Frameworks */ = {isa = PBXBuildFile; productRef = 94C43AC82BAE0A8800E23260 /* NLTextProcessing */; };
+		94C43ACC2BAE144F00E23260 /* TextSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C43ACB2BAE144F00E23260 /* TextSummaryView.swift */; };
+		94C43ACF2BAE147C00E23260 /* TextInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C43ACE2BAE147C00E23260 /* TextInputView.swift */; };
+		94C43AD12BAE14AC00E23260 /* TextInputViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C43AD02BAE14AC00E23260 /* TextInputViewModel.swift */; };
+		94C43AD52BAE17AE00E23260 /* TextSummaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C43AD42BAE17AE00E23260 /* TextSummaryViewModel.swift */; };
 		94D411942B9C8D2D00951D75 /* Text_ProcessingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D411932B9C8D2D00951D75 /* Text_ProcessingApp.swift */; };
 		94D411962B9C8D2D00951D75 /* ProcessingCategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D411952B9C8D2D00951D75 /* ProcessingCategoriesView.swift */; };
 		94D411982B9C8D2E00951D75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94D411972B9C8D2E00951D75 /* Assets.xcassets */; };
@@ -18,9 +24,16 @@
 		94D411B52B9C95A300951D75 /* TextProcessingCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D411B42B9C95A300951D75 /* TextProcessingCategoryView.swift */; };
 		94D411B82B9C995B00951D75 /* TextProcessingCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D411B72B9C995B00951D75 /* TextProcessingCategory.swift */; };
 		94D411BB2B9CCA3400951D75 /* PushDownButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D411BA2B9CCA3400951D75 /* PushDownButtonStyle.swift */; };
+		94D55C742BD3E97900B75516 /* WordsCountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D55C732BD3E97900B75516 /* WordsCountView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		94AD429A2BAF1AC0008F2126 /* SummarizedTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummarizedTextView.swift; sourceTree = "<group>"; };
+		94C43AC62BAE0A3A00E23260 /* NLTextProcessing */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = NLTextProcessing; sourceTree = "<group>"; };
+		94C43ACB2BAE144F00E23260 /* TextSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSummaryView.swift; sourceTree = "<group>"; };
+		94C43ACE2BAE147C00E23260 /* TextInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputView.swift; sourceTree = "<group>"; };
+		94C43AD02BAE14AC00E23260 /* TextInputViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextInputViewModel.swift; sourceTree = "<group>"; };
+		94C43AD42BAE17AE00E23260 /* TextSummaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSummaryViewModel.swift; sourceTree = "<group>"; };
 		94D411902B9C8D2D00951D75 /* Text-Processing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Text-Processing.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94D411932B9C8D2D00951D75 /* Text_ProcessingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text_ProcessingApp.swift; sourceTree = "<group>"; };
 		94D411952B9C8D2D00951D75 /* ProcessingCategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessingCategoriesView.swift; sourceTree = "<group>"; };
@@ -33,6 +46,7 @@
 		94D411B42B9C95A300951D75 /* TextProcessingCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextProcessingCategoryView.swift; sourceTree = "<group>"; };
 		94D411B72B9C995B00951D75 /* TextProcessingCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextProcessingCategory.swift; sourceTree = "<group>"; };
 		94D411BA2B9CCA3400951D75 /* PushDownButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushDownButtonStyle.swift; sourceTree = "<group>"; };
+		94D55C732BD3E97900B75516 /* WordsCountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsCountView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,17 +54,86 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94C43AC92BAE0A8800E23260 /* NLTextProcessing in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		947AFA832BB093D7005D0152 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				94C43ACE2BAE147C00E23260 /* TextInputView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		947AFA842BB093DC005D0152 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				94C43AD02BAE14AC00E23260 /* TextInputViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		94AD42972BAF1A9A008F2126 /* Subview */ = {
+			isa = PBXGroup;
+			children = (
+				94AD429A2BAF1AC0008F2126 /* SummarizedTextView.swift */,
+			);
+			path = Subview;
+			sourceTree = "<group>";
+		};
+		94C43AC72BAE0A8800E23260 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		94C43ACA2BAE143B00E23260 /* TextSummary */ = {
+			isa = PBXGroup;
+			children = (
+				94C43AD22BAE177600E23260 /* View */,
+				94C43AD32BAE177D00E23260 /* ViewModel */,
+			);
+			path = TextSummary;
+			sourceTree = "<group>";
+		};
+		94C43ACD2BAE146F00E23260 /* TextInputView */ = {
+			isa = PBXGroup;
+			children = (
+				947AFA832BB093D7005D0152 /* View */,
+				947AFA842BB093DC005D0152 /* ViewModel */,
+			);
+			path = TextInputView;
+			sourceTree = "<group>";
+		};
+		94C43AD22BAE177600E23260 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				94AD42972BAF1A9A008F2126 /* Subview */,
+				94C43ACB2BAE144F00E23260 /* TextSummaryView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		94C43AD32BAE177D00E23260 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				94C43AD42BAE17AE00E23260 /* TextSummaryViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		94D411872B9C8D2D00951D75 = {
 			isa = PBXGroup;
 			children = (
+				94C43AC62BAE0A3A00E23260 /* NLTextProcessing */,
 				94D411922B9C8D2D00951D75 /* Text-Processing */,
 				94D411912B9C8D2D00951D75 /* Products */,
+				94C43AC72BAE0A8800E23260 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,10 +148,10 @@
 		94D411922B9C8D2D00951D75 /* Text-Processing */ = {
 			isa = PBXGroup;
 			children = (
-				94D411A12B9C8D6100951D75 /* Source */,
 				94D411AD2B9C8FA500951D75 /* Common */,
-				94D411A92B9C8F1F00951D75 /* Resources */,
 				94D411992B9C8D2E00951D75 /* Preview Content */,
+				94D411A92B9C8F1F00951D75 /* Resources */,
+				94D411A12B9C8D6100951D75 /* Source */,
 			);
 			path = "Text-Processing";
 			sourceTree = "<group>";
@@ -95,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				94D411A32B9C8D8F00951D75 /* Main */,
+				94C43ACA2BAE143B00E23260 /* TextSummary */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -179,7 +263,9 @@
 		94D411B92B9CC9DE00951D75 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				94C43ACD2BAE146F00E23260 /* TextInputView */,
 				94D411BA2B9CCA3400951D75 /* PushDownButtonStyle.swift */,
+				94D55C732BD3E97900B75516 /* WordsCountView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -200,6 +286,9 @@
 			dependencies = (
 			);
 			name = "Text-Processing";
+			packageProductDependencies = (
+				94C43AC82BAE0A8800E23260 /* NLTextProcessing */,
+			);
 			productName = "Text-Processing";
 			productReference = 94D411902B9C8D2D00951D75 /* Text-Processing.app */;
 			productType = "com.apple.product-type.application";
@@ -221,7 +310,7 @@
 			};
 			buildConfigurationList = 94D4118B2B9C8D2D00951D75 /* Build configuration list for PBXProject "Text-Processing" */;
 			compatibilityVersion = "Xcode 14.0";
-			developmentRegion = en;
+			developmentRegion = ru;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -256,11 +345,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94AD429B2BAF1AC0008F2126 /* SummarizedTextView.swift in Sources */,
+				94C43AD52BAE17AE00E23260 /* TextSummaryViewModel.swift in Sources */,
+				94C43AD12BAE14AC00E23260 /* TextInputViewModel.swift in Sources */,
+				94C43ACF2BAE147C00E23260 /* TextInputView.swift in Sources */,
 				94D411962B9C8D2D00951D75 /* ProcessingCategoriesView.swift in Sources */,
 				94D411BB2B9CCA3400951D75 /* PushDownButtonStyle.swift in Sources */,
 				94D411942B9C8D2D00951D75 /* Text_ProcessingApp.swift in Sources */,
+				94C43ACC2BAE144F00E23260 /* TextSummaryView.swift in Sources */,
 				94D411B52B9C95A300951D75 /* TextProcessingCategoryView.swift in Sources */,
 				94D411B02B9C8FB500951D75 /* String + Ext.swift in Sources */,
+				94D55C742BD3E97900B75516 /* WordsCountView.swift in Sources */,
 				94D411A82B9C8DE900951D75 /* MainViewModel.swift in Sources */,
 				94D411B82B9C995B00951D75 /* TextProcessingCategory.swift in Sources */,
 				94D411AC2B9C8F4F00951D75 /* LocalizableStrings.swift in Sources */,
@@ -322,7 +417,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -379,7 +474,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -475,6 +570,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		94C43AC82BAE0A8800E23260 /* NLTextProcessing */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = NLTextProcessing;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 94D411882B9C8D2D00951D75 /* Project object */;
 }

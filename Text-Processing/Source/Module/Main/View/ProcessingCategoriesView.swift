@@ -10,7 +10,7 @@ import SwiftUI
 struct ProcessingCategoriesView: View {
     @StateObject private var viewModel = MainViewModel()
     @FocusState private var textFieldFocused
-    
+
     var body: some View {
         NavigationStack {
             ZStack {
@@ -21,13 +21,17 @@ struct ProcessingCategoriesView: View {
                         LazyVStack(alignment: .leading, spacing: 20) {
                             ForEach(viewModel.textProcessingCategories, id: \.self) { category in
                                 NavigationLink {
-                                    Text(category.title)
+                                    switch category {
+                                    case .summarization:
+                                        TextSummaryView()
+                                    default:
+                                        Text(category.title)
+                                    }
                                 } label: {
                                     TextProcessingCategoryView(category: category)
                                 }
                                 .foregroundStyle(.primary)
                                 .buttonStyle(PushDownButtonStyle())
-                                
                             }
                         }
                         .padding(10)
@@ -37,15 +41,12 @@ struct ProcessingCategoriesView: View {
             .navigationTitle(LocalizableStrings.categoriesTitle)
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
-                    Button {
-                        
-                    } label: {
+                    Button {} label: {
                         Image(systemName: "info.circle")
                     }
                 }
             }
         }
-        .tint(.orange)
     }
 }
 

@@ -8,28 +8,26 @@
 import SwiftUI
 
 struct TextProcessingCategoryView: View {
-    
-    // MARK: Property
+    // MARK: Properties
+
     let category: TextProcessingCategory
-    
+
     // MARK: Body
+
     var body: some View {
         HStack(alignment: .center) {
-            category.image
-                .font(.title)
-                .foregroundStyle(.primary, .orange)
-                .padding(.horizontal, 5)
-            
+            categoryImage(for: category)
+
             VStack(alignment: .leading, spacing: 10) {
                 Text(category.title)
-                    .font(.system(.title2, design: .rounded, weight: .semibold))
-                
+                    .font(.system(.title3, design: .rounded, weight: .semibold))
+
                 Text(category.description)
                     .foregroundStyle(.secondary)
             }
-            
+
             Spacer()
-            
+
             Image(systemName: "chevron.right")
                 .padding(.leading)
         }
@@ -43,10 +41,47 @@ struct TextProcessingCategoryView: View {
     }
 }
 
+// MARK: - Local Views
+
+private extension TextProcessingCategoryView {
+    func categoryImage(for category: TextProcessingCategory) -> some View {
+        Group {
+            switch category {
+            case .summarization:
+                category.image
+                    .foregroundStyle(.white, .tint)
+            case .askQuestions:
+                category.image
+                    .foregroundStyle(.white, .tint)
+            case .continuationGenerating:
+                category.image
+                    .foregroundStyle(.primary, .tint)
+            }
+        }
+        .font(.title)
+        .padding(.horizontal, 5)
+    }
+}
+
+// MARK: - Text Processing Category Icon
+
+private extension TextProcessingCategory {
+    var image: Image {
+        switch self {
+        case .summarization:
+            Image(systemName: "text.bubble.fill")
+        case .askQuestions:
+            Image(systemName: "questionmark.circle.fill")
+        case .continuationGenerating:
+            Image(systemName: "character.cursor.ibeam")
+        }
+    }
+}
+
 #Preview {
     ZStack {
         Color(.systemGroupedBackground).ignoresSafeArea()
-        
+
         ScrollView {
             LazyVStack(spacing: 20) {
                 ForEach(TextProcessingCategory.allCases, id: \.self) { category in
