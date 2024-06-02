@@ -42,7 +42,7 @@ final class TextInputViewModel: ObservableObject {
     }
     
     @MainActor @Published private var _text = String()
-    @MainActor @Published var isLoading = false
+    @MainActor @Published private(set) var isLoading = false
 
     @Published private(set) var error: Error?
     
@@ -55,7 +55,7 @@ final class TextInputViewModel: ObservableObject {
 
     // MARK: Init
 
-    @MainActor init(
+    init(
         wordsCountLimit: Int? = nil,
         onStartLoadingFile: (() -> Void)? = nil,
         onUpdateText: ((String) -> Void)? = nil
@@ -66,24 +66,29 @@ final class TextInputViewModel: ObservableObject {
     }
 
     // MARK: Methods
-
+    
     @MainActor
     func processFileChoose(with result: Result<URL, Error>) {
         onStartLoadingFile?()
         isLoading = true
 
-        do {
-            let fileURL = try result.get()
-            fileContentFetchTask = Task { @MainActor in
-                defer {
-                    isLoading = false
-                }
-
-                guard !Task.isCancelled else { return }
-                await getFileContent(fileURL: fileURL)
+        Task {
+            defer {
+                isLoading = false
             }
-        } catch {
-            self.error = error
+
+            do {
+                let fileURL = try result.get()
+                guard fileURL.startAccessingSecurityScopedResource() else {
+                    throw FileDecodingError()
+                }
+                defer { fileURL.stopAccessingSecurityScopedResource() }
+                
+                await getFileContent(fileURL: fileURL)
+            } catch {
+                self.error = error
+                print("Error processing file: \(error.localizedDescription)")
+            }
         }
     }
 
@@ -97,6 +102,8 @@ final class TextInputViewModel: ObservableObject {
 // MARK: - Private Methods
 
 private extension TextInputViewModel {
+    
+    @MainActor
     func getFileContent(fileURL: URL) async {
         do {
             let fileContent = try fetchFileTextContent(with: fileURL)
