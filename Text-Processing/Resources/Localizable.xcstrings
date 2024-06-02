@@ -275,14 +275,14 @@
       "localizations" : {
         "en" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "needs_review",
             "value" : "Ask Questions"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Задать вопросы по тексту"
+            "value" : "Задать вопросы к тексту"
           }
         }
       }
@@ -309,14 +309,14 @@
       "localizations" : {
         "en" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "needs_review",
             "value" : "Generate continuations for the text that will take into account the context of the information in the text"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Сгенерируйте продолжение текста с учетом имеющегося в нем контекста"
+            "value" : "Сгенерируйте продолжение для текста с учетом имеющегося в нем контекста"
           }
         }
       }
@@ -326,14 +326,14 @@
       "localizations" : {
         "en" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "needs_review",
             "value" : "Continue Text"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Продолжить текст"
+            "value" : "Сгенерировать продолжение текста"
           }
         }
       }
@@ -440,6 +440,46 @@
         }
       }
     },
+    "В этом чате пока пусто" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "This chat is empty"
+          }
+        }
+      }
+    },
+    "Введите свой вопрос" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enter your question"
+          }
+        }
+      }
+    },
+    "Задать вопросы" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ask Questions"
+          }
+        }
+      }
+    },
+    "Здесь будут отображаться ваши вопросы по тексту и сгенерированные ответы на них" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your questions about the text and the generated answers to them will be displayed here"
+          }
+        }
+      }
+    },
     "Обработка" : {
       "extractionState" : "stale",
       "localizations" : {
@@ -456,6 +496,12 @@
           }
         }
       }
+    },
+    "Обработка текста и речи" : {
+
+    },
+    "Преобразуйте текст на любом языке в аудио и наоборот" : {
+
     }
   },
   "version" : "1.0"

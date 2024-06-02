@@ -11,27 +11,56 @@ import PDFKit
 final class TextInputViewModel: ObservableObject {
     
     // MARK: Properties
-
-    @MainActor @Published var text = String() {
-        didSet {
-            onUpdateText?(text)
+    
+    @MainActor var text: String {
+        get {
+            self._text
+        }
+        
+        set {
+            guard let wordsCountLimit else {
+                _text = newValue
+                onUpdateText?(newValue)
+                return
+            }
+            
+            var words = newValue.components(separatedBy: .whitespaces)
+            
+            guard words.count > wordsCountLimit else {
+                _text = newValue
+                onUpdateText?(newValue)
+                return
+            }
+            
+            words.removeLast(words.count - wordsCountLimit)
+            
+            let limitedText = words.joined(separator: " ")
+            _text = limitedText
+            
+            onUpdateText?(limitedText)
         }
     }
-
+    
+    @MainActor @Published private var _text = String()
     @MainActor @Published var isLoading = false
 
     @Published private(set) var error: Error?
+    
     private var fileContentFetchTask: Task<Void, Never>?
 
-    var onStartLoadingFile: (() -> Void)?
-    var onUpdateText: ((String) -> Void)?
+    private var onStartLoadingFile: (() -> Void)?
+    private var onUpdateText: ((String) -> Void)?
+    
+    private let wordsCountLimit: Int?
 
     // MARK: Init
 
-    init(
+    @MainActor init(
+        wordsCountLimit: Int? = nil,
         onStartLoadingFile: (() -> Void)? = nil,
         onUpdateText: ((String) -> Void)? = nil
     ) {
+        self.wordsCountLimit = wordsCountLimit
         self.onStartLoadingFile = onStartLoadingFile
         self.onUpdateText = onUpdateText
     }
@@ -84,7 +113,7 @@ private extension TextInputViewModel {
             let pageCount = pdf.pageCount
             let documentContent = NSMutableAttributedString()
 
-            for i in 0 ..< pageCount {
+            for i in 0..<pageCount {
                 guard
                     let page = pdf.page(at: i),
                     let pageContent = page.attributedString
@@ -110,19 +139,17 @@ private extension TextInputViewModel {
         case .rtf:
             return try NSAttributedString(
                 url: url,
-                options: [
-                    .documentType: NSAttributedString.DocumentType.rtf
-                ],
+                options: [.documentType: NSAttributedString.DocumentType.rtf],
                 documentAttributes: nil
-            ).string
+            )
+            .string
         case .rtfd:
             return try NSAttributedString(
                 url: url,
-                options: [
-                    .documentType: NSAttributedString.DocumentType.rtfd
-                ],
+                options: [.documentType: NSAttributedString.DocumentType.rtfd],
                 documentAttributes: nil
-            ).string
+            )
+            .string
         }
     }
     

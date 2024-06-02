@@ -24,6 +24,8 @@ struct ProcessingCategoriesView: View {
                                     switch category {
                                     case .summarization:
                                         TextSummaryView()
+                                    case .askQuestions:
+                                        AskQuestionsView()
                                     default:
                                         Text(category.title)
                                     }

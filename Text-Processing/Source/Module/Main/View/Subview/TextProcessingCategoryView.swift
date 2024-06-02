@@ -56,6 +56,9 @@ private extension TextProcessingCategoryView {
             case .continuationGenerating:
                 category.image
                     .foregroundStyle(.primary, .tint)
+            case .textAndSpeechProcessing:
+                category.image
+                    .foregroundStyle(.primary, .tint)
             }
         }
         .font(.title)
@@ -74,6 +77,8 @@ private extension TextProcessingCategory {
             Image(systemName: "questionmark.circle.fill")
         case .continuationGenerating:
             Image(systemName: "character.cursor.ibeam")
+        case .textAndSpeechProcessing:
+            Image(systemName: "bubble.left.and.text.bubble.right.fill")
         }
     }
 }

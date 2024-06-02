@@ -8,6 +8,20 @@
 import Foundation
 
 extension String {
+    
+    subscript(range: Range<Int>) -> Self? {
+        let stringCount = count
+        
+        if stringCount < range.upperBound || stringCount < range.lowerBound {
+            return nil
+        }
+        
+        let startIndex = index(startIndex, offsetBy: range.lowerBound)
+        let endIndex = index(startIndex, offsetBy: range.upperBound - range.lowerBound)
+        
+        return String(self[startIndex..<endIndex])
+    }
+    
     var numberOfWords: Int {
         var count = 0
         let range = startIndex..<endIndex

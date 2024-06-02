@@ -59,16 +59,12 @@ struct TextSummaryView: View {
                         }
                     }
                     .transition(.opacity.animation(.easeInOut(duration: 0.2)))
-                    .font(.headline)
-                    .foregroundStyle(.white)
-                    .padding()
-                    .frame(maxWidth: .infinity)
-                    .background(.tint)
-                    .clipShape(.rect(cornerRadius: 16, style: .continuous))
                 }
-                .buttonStyle(PushDownButtonStyle())
-                .disabled(enteredText.isEmpty)
-                .opacity(enteredText.isEmpty ? 0.5 : 1.0)
+                .buttonStyle(
+                    ActionButtonStyle(
+                        disabled: enteredText.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
+                    )
+                )
             }
             .padding()
             .allowsHitTesting(!viewModel.isTextProcessing)

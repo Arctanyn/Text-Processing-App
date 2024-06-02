@@ -8,23 +8,23 @@
 import SwiftUI
 
 struct TextInputView: View {
+    
     // MARK: Properties
 
     @StateObject private var viewModel: TextInputViewModel
     @State private var isPresentedFileImporter = false
     @FocusState private var isTextEditorFocused: Bool
 
-    var onStartLoadingFile: (() -> Void)?
-    var onUpdateText: ((String) -> Void)?
-
     // MARK: Init
 
     init(
+        wordsCountLimit: Int? = nil,
         onStartLoadingFile: (() -> Void)? = nil,
         onUpdateText: ((String) -> Void)? = nil
     ) {
         _viewModel = StateObject(
             wrappedValue: TextInputViewModel(
+                wordsCountLimit: wordsCountLimit,
                 onStartLoadingFile: onStartLoadingFile,
                 onUpdateText: onUpdateText
             )

@@ -7,6 +7,8 @@
 
 import Foundation
 
+// MARK: LocalizableStrings
+
 enum LocalizableStrings {
     static let categoriesTitle = "categories.title".localized
     static let doneKeyboardButtonTitle = "done.keyboard.button.title".localized
@@ -37,6 +39,17 @@ extension LocalizableStrings {
     }
 }
 
+// MARK: - AskQuestions
+
+extension LocalizableStrings {
+    enum AskQuestions {
+        static let askQuestions = String(localized: "Задать вопросы")
+        static let enterQuestions = String(localized: "Введите свой вопрос")
+        static let emptyChatTitle = String(localized: "В этом чате пока пусто")
+        static let emptyChatDescription = String(localized: "Здесь будут отображаться ваши вопросы по тексту и сгенерированные ответы на них")
+    }
+}
+
 // MARK: - TextProcessingCategories
 
 extension LocalizableStrings {
@@ -47,12 +60,14 @@ extension LocalizableStrings {
         static let textSummaryTitle = "text.summary.title".localized
         static let textAskQuestionsTitle = "text.ask.questions.title".localized
         static let textContinuationGeneratingTitle = "text.continuation.generating.title".localized
+        static let textAndSpeechProcessingTitle = String(localized: "Обработка текста и речи")
 
         // MARK: Categoris Desriptions
 
         static let textSummaryDescription = "text.summary.description".localized
         static let textAskQuestionsDescription = "text.ask.questions.description".localized
         static let textContinuationGeneratingDescription = "text.continuation.generating.description".localized
+        static let textAndSpeechProcessingDescription = String(localized: "Преобразуйте текст на любом языке в аудио и наоборот")
     }
 }
 
