@@ -10,6 +10,10 @@ import SwiftUI
 struct ActionButtonStyle: ButtonStyle {
     let disabled: Bool
     
+    init(disabled: Bool = false) {
+        self.disabled = disabled
+    }
+    
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
             .font(.headline)

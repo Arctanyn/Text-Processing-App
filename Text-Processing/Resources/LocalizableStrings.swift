@@ -50,6 +50,17 @@ extension LocalizableStrings {
     }
 }
 
+// MARK: - TextSpeechProcessing
+
+extension LocalizableStrings {
+    enum TextSpeechProcessing {
+        static let title = String(localized: "Обработка текста и речи")
+        
+        static let speechToTextContentUnavailableTitle = String(localized: "Ваша речь еще не распознана")
+        static let speechToTextContentUnavailableDescription = String(localized: "Начните запись для преобразования вашей речи в текст")
+    }
+}
+
 // MARK: - TextProcessingCategories
 
 extension LocalizableStrings {

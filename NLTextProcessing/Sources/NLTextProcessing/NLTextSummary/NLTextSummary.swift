@@ -149,7 +149,7 @@ private extension NLTextSummary {
         
         let checkStopWordsContains: (String) -> Bool = { word in
             guard let lang = tagger.dominantLanguage else { return false }
-
+            
             switch lang {
             case .english:
                 return StopWords.en.contains(word.lowercased())

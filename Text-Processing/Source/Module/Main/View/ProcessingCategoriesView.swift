@@ -26,6 +26,8 @@ struct ProcessingCategoriesView: View {
                                         TextSummaryView()
                                     case .askQuestions:
                                         AskQuestionsView()
+                                    case .textAndSpeechProcessing:
+                                        TextSpeechProcessingView()
                                     default:
                                         Text(category.title)
                                     }
@@ -54,4 +56,5 @@ struct ProcessingCategoriesView: View {
 
 #Preview {
     ProcessingCategoriesView()
+        .tint(.teal)
 }
