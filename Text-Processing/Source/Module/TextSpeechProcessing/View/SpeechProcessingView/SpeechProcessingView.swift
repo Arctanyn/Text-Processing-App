@@ -82,10 +82,17 @@ struct SpeechProcessingView: View {
             }
             .ignoresSafeArea(.all, edges: .bottom)
         }
+        .onAppear {
+            setLanguage(language)
+        }
         .onChange(of: language) { _, newValue in
-            Task {
-                await speechRecognizer.setLocale(Locale(identifier: newValue.rawValue))
-            }
+            setLanguage(newValue)
+        }
+    }
+    
+    private func setLanguage(_ language: NLLanguage) {
+        Task {
+            await speechRecognizer.setLocale(Locale(identifier: language.rawValue))
         }
     }
 }
