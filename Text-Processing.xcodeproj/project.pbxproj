@@ -11,9 +11,13 @@
 		9412A73E2C0C740200CD3F3B /* BERTSQUADFP16.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 9412A73D2C0C740200CD3F3B /* BERTSQUADFP16.mlmodel */; };
 		9412A7482C0C77CC00CD3F3B /* TextSpeechProcessingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9412A7472C0C77CC00CD3F3B /* TextSpeechProcessingView.swift */; };
 		9412A7502C0C797600CD3F3B /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9412A74F2C0C797600CD3F3B /* SpeechRecognizer.swift */; };
-		9412A7562C0C918800CD3F3B /* SpeechProcessingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9412A7552C0C918800CD3F3B /* SpeechProcessingView.swift */; };
+		9412A7562C0C918800CD3F3B /* SpeechToTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9412A7552C0C918800CD3F3B /* SpeechToTextView.swift */; };
 		9412A7582C0CCC3800CD3F3B /* NLLanguage + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9412A7572C0CCC3800CD3F3B /* NLLanguage + Ext.swift */; };
 		94AD429B2BAF1AC0008F2126 /* SummarizedTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AD429A2BAF1AC0008F2126 /* SummarizedTextView.swift */; };
+		94B835192C1473870047FED0 /* TextToSpeechView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B835182C1473870047FED0 /* TextToSpeechView.swift */; };
+		94B8351B2C14742D0047FED0 /* TextToSpeechService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B8351A2C14742D0047FED0 /* TextToSpeechService.swift */; };
+		94B8351F2C1476E00047FED0 /* TextToSpeechViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B8351E2C1476E00047FED0 /* TextToSpeechViewModel.swift */; };
+		94B835222C149B7E0047FED0 /* UIApplication + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B835212C149B7E0047FED0 /* UIApplication + Ext.swift */; };
 		94C43AC92BAE0A8800E23260 /* NLTextProcessing in Frameworks */ = {isa = PBXBuildFile; productRef = 94C43AC82BAE0A8800E23260 /* NLTextProcessing */; };
 		94C43ACC2BAE144F00E23260 /* TextSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C43ACB2BAE144F00E23260 /* TextSummaryView.swift */; };
 		94C43ACF2BAE147C00E23260 /* TextInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C43ACE2BAE147C00E23260 /* TextInputView.swift */; };
@@ -47,9 +51,14 @@
 		9412A73D2C0C740200CD3F3B /* BERTSQUADFP16.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = BERTSQUADFP16.mlmodel; sourceTree = "<group>"; };
 		9412A7472C0C77CC00CD3F3B /* TextSpeechProcessingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSpeechProcessingView.swift; sourceTree = "<group>"; };
 		9412A74F2C0C797600CD3F3B /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
-		9412A7552C0C918800CD3F3B /* SpeechProcessingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechProcessingView.swift; sourceTree = "<group>"; };
+		9412A7552C0C918800CD3F3B /* SpeechToTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechToTextView.swift; sourceTree = "<group>"; };
 		9412A7572C0CCC3800CD3F3B /* NLLanguage + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NLLanguage + Ext.swift"; sourceTree = "<group>"; };
 		94AD429A2BAF1AC0008F2126 /* SummarizedTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummarizedTextView.swift; sourceTree = "<group>"; };
+		94B835182C1473870047FED0 /* TextToSpeechView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextToSpeechView.swift; sourceTree = "<group>"; };
+		94B8351A2C14742D0047FED0 /* TextToSpeechService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextToSpeechService.swift; sourceTree = "<group>"; };
+		94B8351E2C1476E00047FED0 /* TextToSpeechViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextToSpeechViewModel.swift; sourceTree = "<group>"; };
+		94B835212C149B7E0047FED0 /* UIApplication + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication + Ext.swift"; sourceTree = "<group>"; };
+		94B835232C14ACF80047FED0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		94C43AC62BAE0A3A00E23260 /* NLTextProcessing */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = NLTextProcessing; sourceTree = "<group>"; };
 		94C43ACB2BAE144F00E23260 /* TextSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSummaryView.swift; sourceTree = "<group>"; };
 		94C43ACE2BAE147C00E23260 /* TextInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputView.swift; sourceTree = "<group>"; };
@@ -110,7 +119,8 @@
 		9412A7442C0C77AD00CD3F3B /* View */ = {
 			isa = PBXGroup;
 			children = (
-				9412A7542C0C917600CD3F3B /* SpeechProcessingView */,
+				94B835172C1473790047FED0 /* TextToSpeechView */,
+				9412A7542C0C917600CD3F3B /* SpeechToTextView */,
 				9412A7472C0C77CC00CD3F3B /* TextSpeechProcessingView.swift */,
 			);
 			path = View;
@@ -128,16 +138,17 @@
 			isa = PBXGroup;
 			children = (
 				9412A74F2C0C797600CD3F3B /* SpeechRecognizer.swift */,
+				94B8351A2C14742D0047FED0 /* TextToSpeechService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
 		};
-		9412A7542C0C917600CD3F3B /* SpeechProcessingView */ = {
+		9412A7542C0C917600CD3F3B /* SpeechToTextView */ = {
 			isa = PBXGroup;
 			children = (
-				9412A7552C0C918800CD3F3B /* SpeechProcessingView.swift */,
+				9412A7552C0C918800CD3F3B /* SpeechToTextView.swift */,
 			);
-			path = SpeechProcessingView;
+			path = SpeechToTextView;
 			sourceTree = "<group>";
 		};
 		9425A2FF2BD583AF00BCF81B /* CoreML */ = {
@@ -170,6 +181,31 @@
 				94AD429A2BAF1AC0008F2126 /* SummarizedTextView.swift */,
 			);
 			path = Subview;
+			sourceTree = "<group>";
+		};
+		94B835172C1473790047FED0 /* TextToSpeechView */ = {
+			isa = PBXGroup;
+			children = (
+				94B8351D2C1476D40047FED0 /* ViewModel */,
+				94B8351C2C1476CF0047FED0 /* View */,
+			);
+			path = TextToSpeechView;
+			sourceTree = "<group>";
+		};
+		94B8351C2C1476CF0047FED0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				94B835182C1473870047FED0 /* TextToSpeechView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		94B8351D2C1476D40047FED0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				94B8351E2C1476E00047FED0 /* TextToSpeechViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		94C43AC72BAE0A8800E23260 /* Frameworks */ = {
@@ -261,6 +297,7 @@
 		94D411922B9C8D2D00951D75 /* Text-Processing */ = {
 			isa = PBXGroup;
 			children = (
+				94B835232C14ACF80047FED0 /* Info.plist */,
 				94D411AD2B9C8FA500951D75 /* Common */,
 				94D411992B9C8D2E00951D75 /* Preview Content */,
 				94D411A92B9C8F1F00951D75 /* Resources */,
@@ -359,6 +396,7 @@
 				94D411AF2B9C8FB500951D75 /* String + Ext.swift */,
 				94CE0E952BE29534006137C7 /* MLMultiArray + Ext.swift */,
 				9412A7572C0CCC3800CD3F3B /* NLLanguage + Ext.swift */,
+				94B835212C149B7E0047FED0 /* UIApplication + Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -488,6 +526,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				94CE0E9A2BE297F1006137C7 /* BERTTokenizer.swift in Sources */,
+				94B835192C1473870047FED0 /* TextToSpeechView.swift in Sources */,
+				94B835222C149B7E0047FED0 /* UIApplication + Ext.swift in Sources */,
 				94AD429B2BAF1AC0008F2126 /* SummarizedTextView.swift in Sources */,
 				94C43AD52BAE17AE00E23260 /* TextSummaryViewModel.swift in Sources */,
 				94C43AD12BAE14AC00E23260 /* TextInputViewModel.swift in Sources */,
@@ -495,9 +535,11 @@
 				94CE0E942BE293FB006137C7 /* BERT.swift in Sources */,
 				9412A73E2C0C740200CD3F3B /* BERTSQUADFP16.mlmodel in Sources */,
 				9412A7582C0CCC3800CD3F3B /* NLLanguage + Ext.swift in Sources */,
+				94B8351B2C14742D0047FED0 /* TextToSpeechService.swift in Sources */,
 				94C43ACF2BAE147C00E23260 /* TextInputView.swift in Sources */,
 				94D411962B9C8D2D00951D75 /* ProcessingCategoriesView.swift in Sources */,
 				94CE0E9F2BE2A4C7006137C7 /* AskQuestionsChat.swift in Sources */,
+				94B8351F2C1476E00047FED0 /* TextToSpeechViewModel.swift in Sources */,
 				9412A73C2C0C724D00CD3F3B /* ChatMessage.swift in Sources */,
 				94CE0E9D2BE29C8F006137C7 /* ActionButtonStyle.swift in Sources */,
 				9412A7482C0C77CC00CD3F3B /* TextSpeechProcessingView.swift in Sources */,
@@ -512,7 +554,7 @@
 				94D55C742BD3E97900B75516 /* WordsCountView.swift in Sources */,
 				94D411A82B9C8DE900951D75 /* MainViewModel.swift in Sources */,
 				94D411B82B9C995B00951D75 /* TextProcessingCategory.swift in Sources */,
-				9412A7562C0C918800CD3F3B /* SpeechProcessingView.swift in Sources */,
+				9412A7562C0C918800CD3F3B /* SpeechToTextView.swift in Sources */,
 				94D411AC2B9C8F4F00951D75 /* LocalizableStrings.swift in Sources */,
 				94CE0E982BE29594006137C7 /* Math.swift in Sources */,
 			);
@@ -651,7 +693,8 @@
 				DEVELOPMENT_TEAM = XX34NBC2NS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "";
+				INFOPLIST_FILE = "Text-Processing/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "$(PRODUCT_NAME)";
 				INFOPLIST_KEY_NSDesktopFolderUsageDescription = "";
 				INFOPLIST_KEY_NSDocumentsFolderUsageDescription = "";
 				INFOPLIST_KEY_NSDownloadsFolderUsageDescription = "";
@@ -689,7 +732,8 @@
 				DEVELOPMENT_TEAM = XX34NBC2NS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "";
+				INFOPLIST_FILE = "Text-Processing/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "$(PRODUCT_NAME)";
 				INFOPLIST_KEY_NSDesktopFolderUsageDescription = "";
 				INFOPLIST_KEY_NSDocumentsFolderUsageDescription = "";
 				INFOPLIST_KEY_NSDownloadsFolderUsageDescription = "";

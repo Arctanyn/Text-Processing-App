@@ -14,14 +14,19 @@ struct TextInputView: View {
     @StateObject private var viewModel: TextInputViewModel
     @State private var isPresentedFileImporter = false
     @FocusState private var isTextEditorFocused: Bool
+    
+    private let isShowWordsCount: Bool
 
     // MARK: Init
 
     init(
         wordsCountLimit: Int? = nil,
+        showWordsCount: Bool = true,
         onStartLoadingFile: (() -> Void)? = nil,
         onUpdateText: ((String) -> Void)? = nil
     ) {
+        self.isShowWordsCount = showWordsCount
+        
         _viewModel = StateObject(
             wrappedValue: TextInputViewModel(
                 wordsCountLimit: wordsCountLimit,
@@ -92,7 +97,7 @@ struct TextInputView: View {
                     }
                 }
 
-                if !viewModel.text.isEmpty {
+                if !viewModel.text.isEmpty, isShowWordsCount {
                     WordsCountView(count: viewModel.text.numberOfWords)
                         .transition(.opacity.animation(.easeInOut(duration: 0.2)))
                 }

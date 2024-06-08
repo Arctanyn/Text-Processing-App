@@ -56,10 +56,10 @@ struct TextSpeechProcessingView: View {
             
             switch processingType {
             case .speechToText:
-                SpeechProcessingView()
+                SpeechToTextView()
                     .ignoresSafeArea(.all, edges: .bottom)
             case .textToSpeech:
-                EmptyView()
+                TextToSpeechView()
             }
             
         }

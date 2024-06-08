@@ -58,6 +58,10 @@ extension LocalizableStrings {
         
         static let speechToTextContentUnavailableTitle = String(localized: "Ваша речь еще не распознана")
         static let speechToTextContentUnavailableDescription = String(localized: "Начните запись для преобразования вашей речи в текст")
+        
+        static let textToSpeechPlayButtonPlay = String(localized: "Воспроизвести")
+        static let textToSpeechPlayButtonPause = String(localized: "Приостановить")
+        static let textToSpeechPlayButtonContinue = String(localized: "Продолжить")
     }
 }
 

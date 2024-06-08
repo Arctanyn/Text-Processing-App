@@ -1,6 +1,9 @@
 {
   "sourceLanguage" : "ru",
   "strings" : {
+    "" : {
+
+    },
     "%@:" : {
 
     },
@@ -275,7 +278,7 @@
       "localizations" : {
         "en" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "Ask Questions"
           }
         },
@@ -309,7 +312,7 @@
       "localizations" : {
         "en" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "Generate continuations for the text that will take into account the context of the information in the text"
           }
         },
@@ -326,7 +329,7 @@
       "localizations" : {
         "en" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "Continue Text"
           }
         },
@@ -546,6 +549,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hungarian"
+          }
+        }
+      }
+    },
+    "Воспроизвести" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Play"
           }
         }
       }
@@ -924,6 +937,26 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Convert text in any language to audio and vice versa"
+          }
+        }
+      }
+    },
+    "Приостановить" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pause"
+          }
+        }
+      }
+    },
+    "Продолжить" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Continue"
           }
         }
       }

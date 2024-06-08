@@ -1,5 +1,5 @@
 //
-//  SpeechProcessingView.swift
+//  SpeechToTextView.swift
 //  Text-Processing
 //
 //  Created by Malil Dugulubgov on 02.06.2024.
@@ -8,7 +8,7 @@
 import SwiftUI
 import NaturalLanguage
 
-struct SpeechProcessingView: View {
+struct SpeechToTextView: View {
     
     // MARK: Properties
     

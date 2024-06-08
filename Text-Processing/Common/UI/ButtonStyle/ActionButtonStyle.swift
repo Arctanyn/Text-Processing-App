@@ -9,9 +9,11 @@ import SwiftUI
 
 struct ActionButtonStyle: ButtonStyle {
     let disabled: Bool
+    let backgroundColor: Color
     
-    init(disabled: Bool = false) {
+    init(disabled: Bool = false, backgroundColor: Color = .teal) {
         self.disabled = disabled
+        self.backgroundColor = backgroundColor
     }
     
     func makeBody(configuration: Configuration) -> some View {
@@ -20,7 +22,7 @@ struct ActionButtonStyle: ButtonStyle {
             .foregroundStyle(.white)
             .padding()
             .frame(maxWidth: .infinity)
-            .background(.tint)
+            .background(backgroundColor)
             .clipShape(.rect(cornerRadius: 16, style: .continuous))
             .opacity(disabled ? 0.5 : 1.0)
             .buttonStyle(PushDownButtonStyle())
