@@ -79,9 +79,11 @@ final class TextInputViewModel: ObservableObject {
 
             do {
                 let fileURL = try result.get()
+                
                 guard fileURL.startAccessingSecurityScopedResource() else {
                     throw FileDecodingError()
                 }
+                
                 defer { fileURL.stopAccessingSecurityScopedResource() }
                 
                 await getFileContent(fileURL: fileURL)

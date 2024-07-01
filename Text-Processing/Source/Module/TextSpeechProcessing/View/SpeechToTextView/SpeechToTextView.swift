@@ -90,6 +90,8 @@ struct SpeechToTextView: View {
         }
     }
     
+    // MARK: Private Methods
+    
     private func setLanguage(_ language: NLLanguage) {
         Task {
             await speechRecognizer.setLocale(Locale(identifier: language.rawValue))

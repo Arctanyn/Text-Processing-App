@@ -34,12 +34,12 @@ final class TextToSpeechService: NSObject {
         
         textLanguageTagger.string = text
         
-        guard let language = NSLinguisticTagger.dominantLanguage(for: text) else {
+        guard let language = textLanguageTagger.dominantLanguage else {
             throw SpeechError.unknownLanguage
         }
         
         let utterance = AVSpeechUtterance(string: text)
-        utterance.voice = AVSpeechSynthesisVoice(language: language)
+        utterance.voice = AVSpeechSynthesisVoice(language: language.rawValue)
         utterance.rate = speed
         
         speechSynthesizer.speak(utterance)

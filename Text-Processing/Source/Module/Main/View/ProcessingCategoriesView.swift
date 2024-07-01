@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct ProcessingCategoriesView: View {
+    
     @StateObject private var viewModel = MainViewModel()
-    @FocusState private var textFieldFocused
 
     var body: some View {
         NavigationStack {
@@ -26,10 +26,10 @@ struct ProcessingCategoriesView: View {
                                         TextSummaryView()
                                     case .askQuestions:
                                         AskQuestionsView()
+                                    case .continuationGenerating:
+                                        GenerateTextContinueView()
                                     case .textAndSpeechProcessing:
                                         TextSpeechProcessingView()
-                                    default:
-                                        Text(category.title)
                                     }
                                 } label: {
                                     TextProcessingCategoryView(category: category)

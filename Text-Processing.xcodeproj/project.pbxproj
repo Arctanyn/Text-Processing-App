@@ -23,6 +23,17 @@
 		94C43ACF2BAE147C00E23260 /* TextInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C43ACE2BAE147C00E23260 /* TextInputView.swift */; };
 		94C43AD12BAE14AC00E23260 /* TextInputViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C43AD02BAE14AC00E23260 /* TextInputViewModel.swift */; };
 		94C43AD52BAE17AE00E23260 /* TextSummaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C43AD42BAE17AE00E23260 /* TextSummaryViewModel.swift */; };
+		94C9B8FC2C15DDAB003F30A5 /* GenerateTextContinueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C9B8FB2C15DDAB003F30A5 /* GenerateTextContinueView.swift */; };
+		94C9B9002C15E270003F30A5 /* GPT2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C9B8FF2C15E270003F30A5 /* GPT2.swift */; };
+		94C9B9022C15E292003F30A5 /* GPT2Tokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C9B9012C15E292003F30A5 /* GPT2Tokenizer.swift */; };
+		94C9B9042C15E2D2003F30A5 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C9B9032C15E2D2003F30A5 /* Utils.swift */; };
+		94C9B9062C15E327003F30A5 /* GPT2ByteEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C9B9052C15E327003F30A5 /* GPT2ByteEncoder.swift */; };
+		94C9B9082C15E3FB003F30A5 /* gpt2-512.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 94C9B9072C15E3FB003F30A5 /* gpt2-512.mlmodel */; };
+		94C9B90B2C15E6B3003F30A5 /* gpt2-vocab.json in Resources */ = {isa = PBXBuildFile; fileRef = 94C9B9092C15E6B2003F30A5 /* gpt2-vocab.json */; };
+		94C9B90C2C15E6B3003F30A5 /* gpt2-merges.txt in Resources */ = {isa = PBXBuildFile; fileRef = 94C9B90A2C15E6B3003F30A5 /* gpt2-merges.txt */; };
+		94C9B90E2C15E710003F30A5 /* GenerateTextContinueViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C9B90D2C15E710003F30A5 /* GenerateTextContinueViewModel.swift */; };
+		94C9B9162C15EE26003F30A5 /* gpt2-64-12.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 94C9B9152C15EE26003F30A5 /* gpt2-64-12.mlmodel */; };
+		94C9B9182C15F04A003F30A5 /* distilgpt2-64-6.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 94C9B9172C15F04A003F30A5 /* distilgpt2-64-6.mlmodel */; };
 		94CE0E762BE25BE7006137C7 /* AskQuestionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CE0E752BE25BE7006137C7 /* AskQuestionsView.swift */; };
 		94CE0E7A2BE25C2B006137C7 /* AskQuestionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CE0E792BE25C2B006137C7 /* AskQuestionsViewModel.swift */; };
 		94CE0E942BE293FB006137C7 /* BERT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CE0E932BE293FB006137C7 /* BERT.swift */; };
@@ -44,6 +55,7 @@
 		94D411BB2B9CCA3400951D75 /* PushDownButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D411BA2B9CCA3400951D75 /* PushDownButtonStyle.swift */; };
 		94D55C742BD3E97900B75516 /* WordsCountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D55C732BD3E97900B75516 /* WordsCountView.swift */; };
 		94E82D032BE25A9C00E70A80 /* vocab.txt in Resources */ = {isa = PBXBuildFile; fileRef = 94E82D022BE25A9C00E70A80 /* vocab.txt */; };
+		94E853E82C1E10BC008CCB2E /* Dictionary + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E853E72C1E10BC008CCB2E /* Dictionary + Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +76,17 @@
 		94C43ACE2BAE147C00E23260 /* TextInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputView.swift; sourceTree = "<group>"; };
 		94C43AD02BAE14AC00E23260 /* TextInputViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextInputViewModel.swift; sourceTree = "<group>"; };
 		94C43AD42BAE17AE00E23260 /* TextSummaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSummaryViewModel.swift; sourceTree = "<group>"; };
+		94C9B8FB2C15DDAB003F30A5 /* GenerateTextContinueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateTextContinueView.swift; sourceTree = "<group>"; };
+		94C9B8FF2C15E270003F30A5 /* GPT2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPT2.swift; sourceTree = "<group>"; };
+		94C9B9012C15E292003F30A5 /* GPT2Tokenizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPT2Tokenizer.swift; sourceTree = "<group>"; };
+		94C9B9032C15E2D2003F30A5 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		94C9B9052C15E327003F30A5 /* GPT2ByteEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPT2ByteEncoder.swift; sourceTree = "<group>"; };
+		94C9B9072C15E3FB003F30A5 /* gpt2-512.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "gpt2-512.mlmodel"; sourceTree = "<group>"; };
+		94C9B9092C15E6B2003F30A5 /* gpt2-vocab.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "gpt2-vocab.json"; sourceTree = "<group>"; };
+		94C9B90A2C15E6B3003F30A5 /* gpt2-merges.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "gpt2-merges.txt"; sourceTree = "<group>"; };
+		94C9B90D2C15E710003F30A5 /* GenerateTextContinueViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateTextContinueViewModel.swift; sourceTree = "<group>"; };
+		94C9B9152C15EE26003F30A5 /* gpt2-64-12.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "gpt2-64-12.mlmodel"; sourceTree = "<group>"; };
+		94C9B9172C15F04A003F30A5 /* distilgpt2-64-6.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "distilgpt2-64-6.mlmodel"; sourceTree = "<group>"; };
 		94CE0E752BE25BE7006137C7 /* AskQuestionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskQuestionsView.swift; sourceTree = "<group>"; };
 		94CE0E792BE25C2B006137C7 /* AskQuestionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskQuestionsViewModel.swift; sourceTree = "<group>"; };
 		94CE0E932BE293FB006137C7 /* BERT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BERT.swift; sourceTree = "<group>"; };
@@ -86,6 +109,7 @@
 		94D411BA2B9CCA3400951D75 /* PushDownButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushDownButtonStyle.swift; sourceTree = "<group>"; };
 		94D55C732BD3E97900B75516 /* WordsCountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsCountView.swift; sourceTree = "<group>"; };
 		94E82D022BE25A9C00E70A80 /* vocab.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vocab.txt; sourceTree = "<group>"; };
+		94E853E72C1E10BC008CCB2E /* Dictionary + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary + Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +127,7 @@
 		9412A73A2C0C723E00CD3F3B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				94E82CE12BE2468400E70A80 /* BERT */,
 				9412A73B2C0C724D00CD3F3B /* ChatMessage.swift */,
 			);
 			path = Model;
@@ -151,14 +176,6 @@
 			path = SpeechToTextView;
 			sourceTree = "<group>";
 		};
-		9425A2FF2BD583AF00BCF81B /* CoreML */ = {
-			isa = PBXGroup;
-			children = (
-				94E82CE12BE2468400E70A80 /* BERT */,
-			);
-			path = CoreML;
-			sourceTree = "<group>";
-		};
 		947AFA832BB093D7005D0152 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,8 +203,8 @@
 		94B835172C1473790047FED0 /* TextToSpeechView */ = {
 			isa = PBXGroup;
 			children = (
-				94B8351D2C1476D40047FED0 /* ViewModel */,
 				94B8351C2C1476CF0047FED0 /* View */,
+				94B8351D2C1476D40047FED0 /* ViewModel */,
 			);
 			path = TextToSpeechView;
 			sourceTree = "<group>";
@@ -250,6 +267,53 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		94C9B8F82C15DCBA003F30A5 /* GenerateTextContinue */ = {
+			isa = PBXGroup;
+			children = (
+				94C9B8FD2C15DDCF003F30A5 /* Model */,
+				94C9B8F92C15DD6F003F30A5 /* View */,
+				94C9B8FA2C15DD74003F30A5 /* ViewModel */,
+			);
+			path = GenerateTextContinue;
+			sourceTree = "<group>";
+		};
+		94C9B8F92C15DD6F003F30A5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				94C9B8FB2C15DDAB003F30A5 /* GenerateTextContinueView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		94C9B8FA2C15DD74003F30A5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				94C9B90D2C15E710003F30A5 /* GenerateTextContinueViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		94C9B8FD2C15DDCF003F30A5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				94C9B8FE2C15E266003F30A5 /* GPT2 */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		94C9B8FE2C15E266003F30A5 /* GPT2 */ = {
+			isa = PBXGroup;
+			children = (
+				94C9B9172C15F04A003F30A5 /* distilgpt2-64-6.mlmodel */,
+				94C9B9152C15EE26003F30A5 /* gpt2-64-12.mlmodel */,
+				94C9B9072C15E3FB003F30A5 /* gpt2-512.mlmodel */,
+				94C9B8FF2C15E270003F30A5 /* GPT2.swift */,
+				94C9B9012C15E292003F30A5 /* GPT2Tokenizer.swift */,
+				94C9B9052C15E327003F30A5 /* GPT2ByteEncoder.swift */,
+			);
+			path = GPT2;
+			sourceTree = "<group>";
+		};
 		94CE0E772BE25C16006137C7 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -297,12 +361,12 @@
 		94D411922B9C8D2D00951D75 /* Text-Processing */ = {
 			isa = PBXGroup;
 			children = (
-				94B835232C14ACF80047FED0 /* Info.plist */,
 				94D411AD2B9C8FA500951D75 /* Common */,
-				94D411992B9C8D2E00951D75 /* Preview Content */,
 				94D411A92B9C8F1F00951D75 /* Resources */,
 				94D411A12B9C8D6100951D75 /* Source */,
 				9412A74D2C0C796100CD3F3B /* Library */,
+				94D411992B9C8D2E00951D75 /* Preview Content */,
+				94B835232C14ACF80047FED0 /* Info.plist */,
 			);
 			path = "Text-Processing";
 			sourceTree = "<group>";
@@ -331,6 +395,7 @@
 				94D411A32B9C8D8F00951D75 /* Main */,
 				94C43ACA2BAE143B00E23260 /* TextSummary */,
 				94E82D042BE25B8B00E70A80 /* AskQuestions */,
+				94C9B8F82C15DCBA003F30A5 /* GenerateTextContinue */,
 				9412A7432C0C779A00CD3F3B /* TextSpeechProcessing */,
 			);
 			path = Module;
@@ -377,6 +442,8 @@
 				94D411AB2B9C8F4F00951D75 /* LocalizableStrings.swift */,
 				94D411B12B9C900300951D75 /* Localizable.xcstrings */,
 				94E82D022BE25A9C00E70A80 /* vocab.txt */,
+				94C9B90A2C15E6B3003F30A5 /* gpt2-merges.txt */,
+				94C9B9092C15E6B2003F30A5 /* gpt2-vocab.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -397,6 +464,7 @@
 				94CE0E952BE29534006137C7 /* MLMultiArray + Ext.swift */,
 				9412A7572C0CCC3800CD3F3B /* NLLanguage + Ext.swift */,
 				94B835212C149B7E0047FED0 /* UIApplication + Ext.swift */,
+				94E853E72C1E10BC008CCB2E /* Dictionary + Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -412,9 +480,9 @@
 		94D411B62B9C994E00951D75 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				9425A2FF2BD583AF00BCF81B /* CoreML */,
 				94D411B72B9C995B00951D75 /* TextProcessingCategory.swift */,
 				94CE0E972BE29594006137C7 /* Math.swift */,
+				94C9B9032C15E2D2003F30A5 /* Utils.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -514,6 +582,8 @@
 				94D4119B2B9C8D2E00951D75 /* Preview Assets.xcassets in Resources */,
 				94D411982B9C8D2E00951D75 /* Assets.xcassets in Resources */,
 				94E82D032BE25A9C00E70A80 /* vocab.txt in Resources */,
+				94C9B90B2C15E6B3003F30A5 /* gpt2-vocab.json in Resources */,
+				94C9B90C2C15E6B3003F30A5 /* gpt2-merges.txt in Resources */,
 				94D411B22B9C900300951D75 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -526,18 +596,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				94CE0E9A2BE297F1006137C7 /* BERTTokenizer.swift in Sources */,
+				94C9B9022C15E292003F30A5 /* GPT2Tokenizer.swift in Sources */,
 				94B835192C1473870047FED0 /* TextToSpeechView.swift in Sources */,
 				94B835222C149B7E0047FED0 /* UIApplication + Ext.swift in Sources */,
 				94AD429B2BAF1AC0008F2126 /* SummarizedTextView.swift in Sources */,
 				94C43AD52BAE17AE00E23260 /* TextSummaryViewModel.swift in Sources */,
+				94C9B9162C15EE26003F30A5 /* gpt2-64-12.mlmodel in Sources */,
+				94C9B9082C15E3FB003F30A5 /* gpt2-512.mlmodel in Sources */,
 				94C43AD12BAE14AC00E23260 /* TextInputViewModel.swift in Sources */,
 				9412A7502C0C797600CD3F3B /* SpeechRecognizer.swift in Sources */,
+				94C9B90E2C15E710003F30A5 /* GenerateTextContinueViewModel.swift in Sources */,
 				94CE0E942BE293FB006137C7 /* BERT.swift in Sources */,
 				9412A73E2C0C740200CD3F3B /* BERTSQUADFP16.mlmodel in Sources */,
 				9412A7582C0CCC3800CD3F3B /* NLLanguage + Ext.swift in Sources */,
+				94C9B9042C15E2D2003F30A5 /* Utils.swift in Sources */,
 				94B8351B2C14742D0047FED0 /* TextToSpeechService.swift in Sources */,
 				94C43ACF2BAE147C00E23260 /* TextInputView.swift in Sources */,
 				94D411962B9C8D2D00951D75 /* ProcessingCategoriesView.swift in Sources */,
+				94C9B8FC2C15DDAB003F30A5 /* GenerateTextContinueView.swift in Sources */,
 				94CE0E9F2BE2A4C7006137C7 /* AskQuestionsChat.swift in Sources */,
 				94B8351F2C1476E00047FED0 /* TextToSpeechViewModel.swift in Sources */,
 				9412A73C2C0C724D00CD3F3B /* ChatMessage.swift in Sources */,
@@ -546,6 +622,7 @@
 				94D411BB2B9CCA3400951D75 /* PushDownButtonStyle.swift in Sources */,
 				94D411942B9C8D2D00951D75 /* Text_ProcessingApp.swift in Sources */,
 				94CE0E762BE25BE7006137C7 /* AskQuestionsView.swift in Sources */,
+				94C9B9062C15E327003F30A5 /* GPT2ByteEncoder.swift in Sources */,
 				94C43ACC2BAE144F00E23260 /* TextSummaryView.swift in Sources */,
 				94CE0E7A2BE25C2B006137C7 /* AskQuestionsViewModel.swift in Sources */,
 				94D411B52B9C95A300951D75 /* TextProcessingCategoryView.swift in Sources */,
@@ -555,7 +632,10 @@
 				94D411A82B9C8DE900951D75 /* MainViewModel.swift in Sources */,
 				94D411B82B9C995B00951D75 /* TextProcessingCategory.swift in Sources */,
 				9412A7562C0C918800CD3F3B /* SpeechToTextView.swift in Sources */,
+				94E853E82C1E10BC008CCB2E /* Dictionary + Ext.swift in Sources */,
+				94C9B9182C15F04A003F30A5 /* distilgpt2-64-6.mlmodel in Sources */,
 				94D411AC2B9C8F4F00951D75 /* LocalizableStrings.swift in Sources */,
+				94C9B9002C15E270003F30A5 /* GPT2.swift in Sources */,
 				94CE0E982BE29594006137C7 /* Math.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -694,7 +774,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Text-Processing/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "$(PRODUCT_NAME)";
+				INFOPLIST_KEY_CFBundleDisplayName = "Text-Processing";
 				INFOPLIST_KEY_NSDesktopFolderUsageDescription = "";
 				INFOPLIST_KEY_NSDocumentsFolderUsageDescription = "";
 				INFOPLIST_KEY_NSDownloadsFolderUsageDescription = "";
@@ -733,7 +813,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Text-Processing/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "$(PRODUCT_NAME)";
+				INFOPLIST_KEY_CFBundleDisplayName = "Text-Processing";
 				INFOPLIST_KEY_NSDesktopFolderUsageDescription = "";
 				INFOPLIST_KEY_NSDocumentsFolderUsageDescription = "";
 				INFOPLIST_KEY_NSDownloadsFolderUsageDescription = "";
